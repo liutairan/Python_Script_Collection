@@ -83,7 +83,7 @@ print(l7[:5])
 print(l7[5:])
 print(l7[-3:])
 
-# Copy a list
+# Copy a list, changes to the copy of list will not affect the original list
 l8 = list(range(10,20))
 l8_copy = l8[:]
 print(l8)
@@ -92,7 +92,7 @@ l8.pop()
 print(l8)
 print(l8_copy)
 
-# false copy
+# false copy, changes to the copy of list will affect the original list
 l9 = list(range(10,20))
 l9_copy = l9
 print(l9)
