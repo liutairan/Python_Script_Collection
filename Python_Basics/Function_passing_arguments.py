@@ -1,9 +1,9 @@
 # Passing an Arbitrary Number of Arguments
 def print_parameters1(*arguments):
-    # The asterisk tells Python to make an empty
-    #     tuple with name arguments which packs
-    #     whatever type of values it receives
-    #     into this tuple.
+    """ The asterisk tells Python to make an empty
+        tuple with name arguments which packs
+        whatever type of values it receives
+        into this tuple. """
     print(arguments)
 
 print_parameters1('para1')
@@ -11,10 +11,10 @@ print_parameters1('para1', 'para2', 'para3')
 
 # Mixing Positional and Arbitrary Arguments
 def print_parameters2(para1, *arguments):
-    # Python matches positional and keyword
-    #     arguments first and then collects
-    #     any remaining arguments in the final
-    #     parameter.
+    """ Python matches positional and keyword
+        arguments first and then collects
+        any remaining arguments in the final
+        parameter. """
     print(para1)
     print(arguments)
 
