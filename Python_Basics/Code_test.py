@@ -1,4 +1,5 @@
 # Each code sample should run separately. Comment out the others.
+# code_test_target.py file is needed.
 import unittest
 from code_test_target import title_string, AddOne
 
