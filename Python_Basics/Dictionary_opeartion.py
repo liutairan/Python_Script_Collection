@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 dict0 = {'color': 'green'}
 print(dict0['color'])
 
@@ -105,3 +107,13 @@ for username, user_info in users.items():
     location = user_info['location']
     print("\tFull name: " + full_name.title())
     print("\tLocation: " + location.title())
+
+
+# Keep track of the order in which key-value pairs are added with OrderedDict
+para_dict = OrderedDict()
+para_dict['field1'] = 'para1'
+para_dict['field2'] = 'para2'
+para_dict['field4'] = 'para4'
+para_dict['field3'] = 'para3'
+for key, value in para_dict.items():
+    print(key + ": " + value + ".")
