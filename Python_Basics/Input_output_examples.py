@@ -42,3 +42,8 @@ dict_var1 = {'field1': 111, 'field2': 222, 'field3': 333}
 print('field1: {0[field1]:d}; field2: {0[field2]:d}; '
       'field3: {0[field3]:d}'.format(dict_var1))
 print('field1: {field1:d}; field2: {field2:d}; field3: {field3:d}'.format(**dict_var1))
+
+for x in range(1, 11):
+    print('{0:2d} {1:3d} {2:4d}'.format(x, x*x, x*x*x))
+
+# Manual string formatting
